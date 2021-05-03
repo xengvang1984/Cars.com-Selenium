@@ -1,5 +1,8 @@
 package com.cars.selector;
 
+/**
+ * This class contains all the UI element css selectors values for the search results page.
+ */
 public class SearchResultsSelector implements ElementSelector {
     // UI ELEMENT CSS SELECTORS
     public static final String ALL_SEARCH_RESULTS = ".shop-srp-listings__listing";

@@ -3,6 +3,9 @@ package com.cars.page;
 import com.cars.selector.ElementSelector;
 import com.cars.selector.HomePageSelector;
 
+/**
+ * This class contains all the UI element selectors and functionalities for the homepage.
+ */
 public class HomePage extends CarsPage {
     private static final HomePageSelector SEARCH_BY_MAKE_STOCK_TYPE_SELECT_OPTION = new HomePageSelector(HomePageSelector.SEARCH_BY_MAKE_STOCK_TYPE_SELECT_OPTION);
     private static final HomePageSelector SEARCH_BY_MAKE_MAKE_TYPE_SELECT_OPTION = new HomePageSelector(HomePageSelector.SEARCH_BY_MAKE_MAKE_TYPE_SELECT_OPTION);

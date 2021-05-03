@@ -1,5 +1,8 @@
 package com.cars.selector;
 
+/**
+ * This class contains all the UI element css selectors values for the homepage.
+ */
 public class HomePageSelector implements ElementSelector {
     public static final String SEARCH_BY_MAKE_STOCK_TYPE_SELECT_OPTION = "select[name=\"stockType\"]";
     public static final String SEARCH_BY_MAKE_MAKE_TYPE_SELECT_OPTION = "select[name=\"makeId\"]";

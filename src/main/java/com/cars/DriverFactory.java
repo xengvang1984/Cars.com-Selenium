@@ -5,6 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.net.MalformedURLException;
 
+/**
+ * This class creates and gets the web driver that runs the UI tests.
+ */
 public class DriverFactory {
 
     private static WebDriver webDriver;

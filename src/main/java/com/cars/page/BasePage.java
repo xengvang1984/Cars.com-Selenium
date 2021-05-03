@@ -14,6 +14,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This class contains all the common functionality that is used across all pages.
+ */
 public class BasePage extends DriverFactory {
 
     public void selectOptionByElementSelectorAndExactOptionText(ElementSelector elementSelector, Object optionText) {

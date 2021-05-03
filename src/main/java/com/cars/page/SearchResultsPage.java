@@ -4,6 +4,9 @@ import com.cars.selector.ElementSelector;
 import com.cars.selector.SearchResultsSelector;
 import org.testng.Assert;
 
+/**
+ * This class contains all the UI element selectors and functionalities for the search results page.
+ */
 public class SearchResultsPage extends CarsPage {
     private static final SearchResultsSelector NEW_USED_CAR_SEARCH_CRITERIA_NEW_RADIO_BTN = new SearchResultsSelector(SearchResultsSelector.NEW_USED_CAR_SEARCH_CRITERIA_NEW_RADIO_BTN);
     private static final SearchResultsSelector TRIM_SEARCH_CRITERIA_TOURING_8_PASSENGER_CHECKBOX = new SearchResultsSelector(SearchResultsSelector.TRIM_SEARCH_CRITERIA_TOURING_8_PASSENGER_CHECKBOX);
