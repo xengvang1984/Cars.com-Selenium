@@ -24,6 +24,6 @@ public class SearchResultsSelector implements ElementSelector {
 
     @Override
     public String getElementSelectorValue() {
-        return null;
+        return elementSelectorValue;
     }
 }
