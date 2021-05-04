@@ -31,6 +31,7 @@ public class SearchResultsPage extends CarsPage {
     }
 
     public void verifyCurrentSearchCriteria(int indexPosition, String expectedText) {
+        waitUntilPageIsFullyLoaded();
         if (indexPosition > 0) {
             indexPosition--;
         }

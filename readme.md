@@ -18,3 +18,4 @@ The UI tests for Cars.com was built using Java, TestNG and Selenium WebDriver. I
 3. Making sure the element is visible on the screen when you have to scroll the page to get to the UI element.
 4. Make sure the page is fully loaded before starting the test.
 5. The was no clean identifier to get the currently set search criterias. This made it difficult to validate the text and it's positions.
+6. The url was not getting updated when the additional filters were being set on the search results page. I had restart the browser and hardcode the search url to be able to access the filtered search results.
