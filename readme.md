@@ -14,7 +14,7 @@ The UI tests for Cars.com was built using Java, TestNG and Selenium WebDriver. I
 
 ## Challenges in UI Testing on Cars.com
 1. Test browser drivers like ChromeDriver is getting blocked after the search is submitted. The next page returns a 503 error.
-2. Most of the UI elements I was interacting with did not have an id tag associated with it. This made is harder to select the right UI element to interact with as certain css selector values would return more than one. I'd prefer custom tags such as data-* that is set just for testing purposes. This will prevent it from being change in the future.
+2. Most of the UI elements I was interacting with did not have an id tag associated with it. This made it harder to select the right UI element to interact with as certain css selector values would return more than one. I'd prefer custom tags such as data-* that is set just for testing purposes. This will prevent it from changing in the future.
 3. Making sure the element is visible on the screen when you have to scroll the page to get to the UI element.
-4. Interacting with a UI element before it is fully loaded. If you interact before it is visible, the test fails.
+4. Make sure the page is fully loaded before starting the test.
 5. The was no clean identifier to get the currently set search criterias. This made it difficult to validate the text and it's positions.
