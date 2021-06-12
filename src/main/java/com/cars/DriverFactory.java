@@ -1,5 +1,6 @@
 package com.cars;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
 
@@ -18,7 +20,6 @@ public class DriverFactory {
     private static WebDriver webDriver;
 
     public WebDriver buildDriver() {
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver_90.0.4430.24.exe");
         webDriver = new ChromeDriver(getChromeOptions());
         webDriver.manage().window().maximize();
         return webDriver;

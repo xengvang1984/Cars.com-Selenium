@@ -1,7 +1,9 @@
 package com.cars.page;
 
 import com.cars.DriverFactory;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 /**
@@ -12,6 +14,11 @@ public class CarsPage extends BasePage {
     public static final String CARS_URL = "https://www.cars.com";
 
     private static final DriverFactory DRIVER_FACTORY = new DriverFactory();
+
+    @BeforeSuite
+    public static void webDriverSetup() {
+        WebDriverManager.chromedriver().setup();
+    }
 
     @BeforeTest
     public void startWebDriver() {
